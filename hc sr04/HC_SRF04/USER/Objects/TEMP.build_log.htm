@@ -1,0 +1,74 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.17.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: hoang trinh, abs, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.17
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.17
+Dialog DLL:      DARMSTM.DLL V1.65.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TARMSTM.DLL V1.64.0.0
+ 
+<h2>Project:</h2>
+D:\keilc v5_new\stm32f103c8xx\hc sr04\HC_SRF04\USER\HC_SRF04_UART.uvprojx
+Project File Date:  03/28/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'HC-SRF04'
+assembling startup_stm32f10x_hd.s...
+startup_stm32f10x_hd.s: Error: A1067E: Output file specified as '..\CORE\startup_stm32f10x_hd.s', but it has already been specified as '.\objects\startup_stm32f10x_hd.o'
+startup_stm32f10x_hd.s: error: A1023E: File "__UVISION_VERSION SETA 517" could not be opened: No such file or directory
+compiling core_cm3.c...
+compiling LED.c...
+compiling HC-SR04.c...
+compiling adc.c...
+compiling delay.c...
+compiling usart.c...
+compiling sys.c...
+..\SYSTEM\sys\sys.c(295): warning:  #550-D: variable "ulChannel" was set but never used
+  	uint32_t ulChannel;
+..\SYSTEM\sys\sys.c(334): warning:  #550-D: variable "ulChannel" was set but never used
+  	uint32_t ulChannel;
+..\SYSTEM\sys\sys.c: 2 warnings, 0 errors
+compiling misc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_tim.c...
+compiling main.c...
+main.c(19): warning:  #177-D: variable "c" was declared but never referenced
+  	 u8 c=0;
+main.c(20): warning:  #177-D: variable "adcx" was declared but never referenced
+  	 u16 adcx=0;
+main.c(21): warning:  #177-D: variable "temp" was declared but never referenced
+  	 float  temp=0;
+main.c(22): warning:  #177-D: variable "buffer" was declared but never referenced
+  	 char buffer[100];
+main.c: 4 warnings, 0 errors
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+".\Objects\TEMP.axf" - 2 Error(s), 6 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  D:\keilc v5_new\stm32f103c8xx\hc sr04\HC_SRF04\USER\RTE
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>

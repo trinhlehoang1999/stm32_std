@@ -1,0 +1,73 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.13.0.0
+Copyright (C) 2014 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: abc abc, bac, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.13.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.13.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.5.0
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+D:\keilc v5_new\stm32f103c8xx\i2c\I2C\USER\IIC_UART.uvprojx
+Project File Date:  04/29/2020
+
+<h2>Output:</h2>
+Rebuild target 'IIC'
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling LED.c...
+compiling dht11.c...
+..\HARDWARE\DHT11\dht11.c(33): warning:  #61-D: integer operation result is out of range
+        DHT11_IO_IN();
+..\HARDWARE\DHT11\dht11.c(33): warning:  #68-D: integer conversion resulted in a change of sign
+        DHT11_IO_IN();
+..\HARDWARE\DHT11\dht11.c: 2 warnings, 0 errors
+compiling myiic.c...
+compiling ds1307.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+compiling misc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling main.c...
+main.c(74): warning:  #177-D: variable "add" was declared but never referenced
+         u8 add=0, err=0;
+main.c(74): warning:  #177-D: variable "err" was declared but never referenced
+         u8 add=0, err=0;
+main.c(75): warning:  #177-D: variable "temp" was declared but never referenced
+         u8 temp=0,humi=0;
+main.c(75): warning:  #177-D: variable "humi" was declared but never referenced
+         u8 temp=0,humi=0;
+main.c(76): warning:  #177-D: variable "buffer" was declared but never referenced
+         char buffer[100];
+main.c: 5 warnings, 0 errors
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+linking...
+Program Size: Code=5692 RO-data=2640 RW-data=136 ZI-data=1824  
+FromELF: creating hex file...
+".\Objects\TEMP.axf" - 0 Error(s), 7 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  D:\keilc v5_new\stm32f103c8xx\i2c\I2C\USER\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0
+
+<h2>Collection of Component Files used:</h2>
+</pre>
+</body>
+</html>

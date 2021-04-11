@@ -1,0 +1,120 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.13.0.0
+Copyright (C) 2014 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: abc xyz, ghk, LIC=CRMWF-6U8TW-VJD6J-U4QY9-FK8DE-P8BH1
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.13.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.13.0.0
+Dialog DLL:      DARMSTM.DLL V1.65.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.14.0_KEIL
+Dialog DLL:      TARMSTM.DLL V1.64.0.0
+ 
+<h2>Project:</h2>
+D:\keilc v5_new\rscswitch\USER\rscswitch.uvprojx
+Project File Date:  03/04/2020
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling core_cm3.c...
+compiling LED.c...
+compiling rcswtich.c...
+rcswtich.h(26): error:  #14-D: extra text after expected end of preprocessing directive
+  #if defined( __AVR_ATtinyX5__ ) or defined ( __AVR_ATtinyX4__ )
+rcswtich.h(34): error:  #20: identifier "class" is undefined
+  class RCSwitch {
+rcswtich.h(34): error:  #65: expected a ";"
+  class RCSwitch {
+rcswtich.h(54): error:  #14-D: extra text after expected end of preprocessing directive
+      #if not defined( RCSwitchDisableReceiving )
+rcswtich.h(68): warning:  #12-D: parsing restarts here after previous syntax error
+      void enableTransmit(int nTransmitterPin);
+rcswtich.h(69): warning:  #1295-D: Deprecated declaration disableTransmit - give arg types
+      void disableTransmit();
+rcswtich.h(72): error:  #14-D: extra text after expected end of preprocessing directive
+      #if not defined( RCSwitchDisableReceiving )
+rcswtich.h(95): error:  #20: identifier "HighLow" is undefined
+          HighLow syncFactor;
+rcswtich.h(96): error:  #20: identifier "HighLow" is undefined
+          HighLow zero;
+rcswtich.h(97): error:  #20: identifier "HighLow" is undefined
+          HighLow one;
+rcswtich.h(115): error:  #20: identifier "bool" is undefined
+          bool invertedSignal;
+rcswtich.h(118): error:  #20: identifier "Protocol" is undefined
+      void setProtocol(Protocol protocol);
+rcswtich.h(120): error:  #147-D: declaration is incompatible with "void setProtocol(<error-type>)" (declared at line 118)
+      void setProtocol(int nProtocol, int nPulseLength);
+rcswtich.h(122): error:  #77-D: this declaration has no storage class or type specifier
+    private:
+rcswtich.h(122): error:  #65: expected a ";"
+    private:
+rcswtich.h(124): error:  #20: identifier "bool" is undefined
+      char* getCodeWordB(int nGroupNumber, int nSwitchNumber, bool bStatus);
+rcswtich.h(125): error:  #20: identifier "bool" is undefined
+      char* getCodeWordC(char sFamily, int nGroup, int nDevice, bool bStatus);
+rcswtich.h(126): error:  #20: identifier "bool" is undefined
+      char* getCodeWordD(char group, int nDevice, bool bStatus);
+rcswtich.h(127): error:  #20: identifier "HighLow" is undefined
+      void transmit(HighLow pulses);
+rcswtich.h(129): error:  #14-D: extra text after expected end of preprocessing directive
+      #if not defined( RCSwitchDisableReceiving )
+rcswtich.h(137): error:  #20: identifier "Protocol" is undefined
+      Protocol protocol;
+rcswtich.h(139): error:  #14-D: extra text after expected end of preprocessing directive
+      #if not defined( RCSwitchDisableReceiving )
+rcswtich.h(153): error:  #169: expected a declaration
+  };
+rcswtich.h(155): warning:  #1-D: last line of file ends without a newline
+  #endif
+rcswtich.h(1): error:  #37: the #endif for this directive is missing
+  #ifndef _RCSwitch_h
+rcswtich.c(41): error:  #20: identifier "Protocol" is undefined
+  static const Protocol PROGMEM proto[] = {
+KB: Unexpected type: 0
+error type>(41): error:  #65: expected a ";"
+  static const Protocol PROGMEM proto[] = {
+rcswtich.c(55): warning:  #12-D: parsing restarts here after previous syntax error
+  };
+rcswtich.c(58): error:  #20: identifier "proto" is undefined
+     numProto = sizeof(proto) / sizeof(proto[0])
+rcswtich.c(61): error:  #14-D: extra text after expected end of preprocessing directive
+  #if not defined( RCSwitchDisableReceiving )
+rcswtich.c(74): error:  #147: declaration is incompatible with "<error-type> RCSwitch" (declared at line 34 of "rcswtich.h")
+  RCSwitch() {
+rcswtich.c(77): error:  #165: too few arguments in function call
+    setProtocol(1);
+rcswtich.c(78): error:  #14-D: extra text after expected end of preprocessing directive
+    #if not defined( RCSwitchDisableReceiving )
+rcswtich.c(88): error:  #20: identifier "Protocol" is undefined
+  void setProtocol(Protocol protocol) {
+rcswtich.c: 4 warnings, 30 errors
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling misc.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling delay.c...
+compiling sys.c...
+".\Objects\LED_NEW.axf" - 30 Error(s), 4 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  D:\keilc v5_new\rscswitch\USER\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+</pre>
+</body>
+</html>
